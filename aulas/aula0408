@@ -47,3 +47,26 @@ public class Main
 }
 }
 --------------------------------------------------------------------------------------------
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+   String nome, sobrenome;
+   
+	  Scanner scan = new Scanner(System.in);
+
+    System.out.println("Digite o nome");
+ nome = scan.nextLine ();
+ 
+  System.out.println("Digite o sobrenome");
+ sobrenome = scan.nextLine ();
+
+    
+    nome_completo = nome + " "+sobrenome;
+    
+       System.out.println("O nome completo é:"+ nome
+  
+    
+}
+}
