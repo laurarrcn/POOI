@@ -1,0 +1,27 @@
+---------------------------------------------------------------------
+1) CALCULAR MÉDIA SEMESTRAL
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+   float B1, B2, B3;
+	   
+	  Scanner scan = new Scanner(System.in);
+
+    System.out.println("Nota do 1° Bimestre");
+   B1= scan.nextFloat();
+
+     System.out.println("Nota do 2° Bimestre");
+  B2= scan.nextFloat();
+    
+     System.out.println("Nota do 3° Bimestre");
+  B3= scan.nextFloat();
+    
+    float resultado = (B1 + B2 + B3) / 3;
+    
+       System.out.println("Sua média é"+resultado);
+  
+    
+}
+}
+--------------------------------------------------------------------
