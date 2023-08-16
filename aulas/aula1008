@@ -1,0 +1,176 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+      
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.printf("Digite sua idade\n");
+    int idade = scan.nextInt();
+    
+    if(idade >= 0) {
+        
+        if(idade >= 18) {
+            
+            System.out.printf("\nmaior de idade");
+            
+        }
+        else {
+            
+            System.out.printf("\nmenor de idade");
+            
+        }
+    }
+    else {
+        
+       System.out.printf("\nidade inválida"); 
+        
+    }
+  }
+}
+-----------------------------------------------------------------------------------------
+Cálculo de Bônus Salarial: Escreva um programa em Java que solicita ao usuário
+que digite o valor do salário mensal. O programa deve calcular o bônus salarial de acordo com a seguinte regra:
+se o salário for menor a R$ 1000, o bônus será de 10% do salário; 
+Entre R$ 1000 e R$ 2000, o bônus será de 5% do salário;
+Maior que R$ 2000, bônus de 2%. Em seguida, exiba o valor do bônus na tela.
+
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+      
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.printf("Digite seu salário mensal\n");
+    float salario = scan.nextFloat();
+    float bonus = 0;
+    
+    if(salario <= 1000) {
+        
+       bonus = salario * 1 / 10; 
+        
+    }
+    else if(salario > 1000 && salario <= 2000) {
+        
+       bonus = salario * 5 / 100; 
+        
+    }
+    else {
+        
+        bonus = salario * 2 / 100;
+        
+    }
+    
+    System.out.printf("\nSalario com bonus: %.2f", bonus);
+ }
+}
+--------------------------------------------------------------------------------------
+EXERCÍCIOS SWITCH
+
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+      
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.printf("Digite\n");
+    int dia = scan.nextInt();
+    
+    
+    switch(dia) {
+        
+        case 1:
+           System.out.printf("\nDomingo");
+           break;
+           
+        case 2:
+           System.out.printf("\nSegunda");
+           break;
+           
+        case 3:
+           System.out.printf("\nTerça");
+           break;
+           
+        case 4:
+           System.out.printf("\nQuarta");
+           break;
+           
+        case 5:
+           System.out.printf("\nQuinta");
+           break;
+        
+        case 6:
+           System.out.printf("\nSexta");
+           break;
+           
+        case 7:
+           System.out.printf("\nSabado");
+           break;
+           
+        default:
+           System.out.printf("\nErro, a semana só tem 7 dias");
+           break;
+            
+    }
+    
+    
+ }
+}
+------------------------------------------------------------------------------------------------
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+      
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.printf("Digite o valor do produto\n");
+    double valor = scan.nextFloat();
+    System.out.printf("Digite o cupom de desconto (1, 2 ou 3)\n");
+    int desconto = scan.nextInt();
+    
+    
+    switch(desconto) {
+        
+        case 1:
+            
+           if(valor > 30) {
+               
+               valor = valor * 0.7;
+               
+           }
+           System.out.printf("\nValor com desconto: %.2f", valor);
+           break;
+           
+        case 2:
+            
+           valor = valor * 0.8;
+           System.out.printf("\nValor com desconto: %.2f", valor);
+           break;
+           
+        case 3:
+            
+           if(valor > 100) {
+               
+               valor = valor * 0.9;
+               
+           }
+           else {
+               
+               valor = valor * 0.95;
+               
+           }
+           System.out.printf("\nValor com desconto: %.2f", valor);
+           break;
+           
+           
+        default:
+           System.out.printf("\nErro, o desconto deve ser 1, 2 ou 3");
+           break;
+            
+    }  
+ }
+}
+-----------------------------------------------------------------------------------
