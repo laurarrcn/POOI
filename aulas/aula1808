@@ -1,0 +1,44 @@
+Soma de Números Inteiros: Escreva um programa em Java que solicita ao usuário 
+que digite uma sequência de números inteiros. Utilize uma estrutura de repetição whilepara ler os
+números até que seja digitado um número negativo. Em seguida, exiba a soma dos números 
+inteiros digitados (não incluindo o número negativo).
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	  Scanner scan = new Scanner(System.in);
+	  
+   int soma = 0;
+   int x= 0;
+   
+   while(x>=0){
+       System.out.println("Digite o número");
+       x = scan.nextInt();
+       if(x>0){
+       soma = soma+x;
+   }
+       System.out.println("Resultado:"+soma);
+	}
+}
+}
+------------------------------------------------------------------------------
+Contagem Regressiva: Escreva um programa em Java que solicita ao usuário 
+um número inteiro positivo.Utilize uma estrutura de repetição do-while para 
+exibir uma contagem regressiva a partir do número informado pelo usuário até 1.
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	  Scanner scan = new Scanner(System.in);
+	  
+   System.out.println("Digite um número: ");
+   int x = scan.nextInt();
+    while(x >= 0) {
+        System.out.println(x);
+        x--;
+    }
+   
+}
+}
