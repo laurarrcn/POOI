@@ -1,0 +1,147 @@
+/*
+Exercício de Cálculo de Média: Crie um programa que solicite ao usuário três
+notas (números de ponto flutuante) e calcule a média aritmética das notas. 
+Em seguida, exiba a média na tela.
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		
+		int nota1, nota2, nota3;
+		
+		System.out.println("Digite sua nota 1");
+		 nota1 = scan.nextInt();
+		 
+		 	System.out.println("Digite sua nota 2");
+		 nota2 = scan.nextInt();
+		 
+		 	System.out.println("Digite sua nota 3");
+		 nota3 = scan.nextInt();
+		 
+		 System.out.println("Sua média é:"+(nota1+nota2+nota3)/3);
+		 
+		 
+	}
+}
+-------------------------------------------------------
+	/*
+ExercC-cio de ConversC#o de Temperatura: Crie um programa que peC'a ao usuC!rio
+para digitar uma temperatura em graus
+Celsius e converta-a para Fahrenheit. Em seguida, exiba o resultado na tela.
+*/
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+    Scanner scan = new Scanner (System.in);
+
+    System.out.println("Digite uma temperatura em celsius");
+    int temp = scan.nextInt ();
+
+
+    int f = ((temp*9) /5)+32;
+    System.out.println("A temperatura em fahrenheit é:"+f);
+
+}
+}
+------------------------------------------------------------
+	/*
+Exercício de Contagem de Caracteres: Crie um programa que solicite ao usuário
+que digite uma frase (uma string). Em seguida, conte o número de caracteres
+(incluindo espaços) na frase e exiba o resultado na tela.
+*/
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+    Scanner scan = new Scanner (System.in);
+
+    System.out.println("Digite uma frase:");
+    String frase = scan.nextLine();
+   
+    int quant = frase.length();
+   
+    System.out.println("Sua frase tem:"+quant);
+
+}
+}
+--------------------------------------------------------------
+/*
+Exercício de Contagem de Caracteres: Crie um programa que solicite ao usuário
+que digite uma frase (uma string). Em seguida, conte o número de caracteres
+(incluindo espaços) na frase e exiba o resultado na tela.
+*/
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+    Scanner scan = new Scanner (System.in);
+
+    System.out.println("Digite uma frase:");
+    String frase = scan.nextLine();
+   
+    int quant = frase.length();
+   
+    if (quant<10){
+        System.out.println("é menor que 10");
+    } else if(quant>10 && quant<20){
+        System.out.println("é maior que 10");
+    } else{
+        System.out.println("xxxxxxxxxx");
+    }
+
+}
+}
+----------------------------------------------------------------
+	import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+    Scanner scan = new Scanner (System.in);
+
+    System.out.println("Digite o dia da semana:");
+    int dia = scan.nextInt();
+   
+    switch (dia){
+        case 1:
+            System.out.println("Domingo");
+            break;
+        case 2:
+            System.out.println("Segunda");
+            break;
+        case 3:
+            System.out.println("Terça");
+            break;
+        case 4:
+            System.out.println("Quarta");
+            break;
+        case 5:
+            System.out.println("Quinta");
+            break;
+        case 6:
+            System.out.println("Sexta");
+            break;
+        case 7:
+            System.out.println("Sábado");
+            break;
+        default:
+            System.out.println("Não é um dia da semana");
+            break;
+    }
+}
+}
+-----------------------------------------------------------
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+    Scanner scan = new Scanner (System.in);
+
+    for (int i = 1; i <=5; i++){
+        System.out.println("xxxxx"+i);
+    }
+}
+}
+	
