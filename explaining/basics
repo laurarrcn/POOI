@@ -1,1 +1,14 @@
-
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		 Scanner scan = new Scanner(System.in);
+		 
+		 System.out.println("digite um numero");
+		 int numero = scan.nextInt();
+		 int y = 10;
+		 System.out.println(numero+y);
+		
+	}
+}
+-----------------------------------------------------
