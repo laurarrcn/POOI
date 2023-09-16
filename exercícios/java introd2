@@ -18,6 +18,36 @@ public class Main {
         
     }
 }
+------------------------------------------------------------------
+não da para display um nextLine() depois de um nextInt() porque depois do nextInt() o programa entende 
+que acabou as coisas a serem displayed e não lê mais nada.
+dessa forma, pra ele ler as coisas depois do nextInt() a gente tem que clear the code com
+um scanner.nextLine() após o Int() e depois disso digitar o que deve ser lido e rodado.
+exemplo:
+
+import java.util.*;
+
+public class Main
+{
+
+  public static void main (String[]args)
+  {
+
+    Scanner scanner = new Scanner (System.in);
+      System.out.println ("What is your name?");
+    String name = scanner.nextLine ();
+      System.out.println ("How old are you?");
+    int age = scanner.nextInt ();
+      scanner.nextLine ();
+      System.out.println ("whats your fav food?");
+    String food = scanner.nextLine ();
+
+      System.out.println ("Hello " + name);
+      System.out.println ("You are " + age);
+      System.out.println ("Your fav food is" + food);
+
+  }
+}
 --------------------------------------------------
 SWAP TWO VARIABLES
 public class Main
