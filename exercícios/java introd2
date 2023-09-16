@@ -113,4 +113,27 @@ public static void main(String[] args) {
 }
 }
 --------------------------------------------------
+GENARATING PSEUDORANDOM NUMBERS
+import java.util.*;
 
+public class Main
+{
+
+  public static void main (String[]args)
+  {
+
+    Random random = new Random ();
+
+    // int x = random.nextInt(6)+1;
+    // double y = random.nextDouble();
+    // boolean z = random.nextBoolean();
+
+      System.out.println (z);
+  }
+}
+
+on int x if we only limit it at 6 it will show only 0-5 bc the computers counts the 0 so we 
+must add 1 for it to count 0-6.
+double will show a random value between 0 and 1.
+boolean will show a value true or false.
+----------------------------------------------------------------------------------
