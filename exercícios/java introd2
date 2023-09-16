@@ -71,3 +71,27 @@ public class Main
   }
 
 }
+
+----------------------------------------------------------------------------
+/*
+just change the operators for a dif result
+expression = operands and operators
+operands = values, variables, numbers, quantity
+operators = + - * / %
+variable++ adds 1
+variable-- decreases 1
+*/
+
+import java.util.*;
+
+public class Main{
+public static void main(String[] args) {
+    
+    int friends = 10;
+    
+    friends = friends / 2;
+    
+    System.out.println(friends);
+    
+}
+}
