@@ -95,3 +95,22 @@ public static void main(String[] args) {
     
 }
 }
+--------------------------------------------
+for example if you divide 10 / 3 it won't show 3.333 its gonna show 3 because 
+the variable is Int. if you'd want it to show 3.333 you'd have to declare the 
+variable as float instead of Int as the following example:
+import java.util.*;
+
+public class Main{
+public static void main(String[] args) {
+    
+    float friends = 10;
+    
+    friends = (float) friends / 3;
+    
+    System.out.println(friends);
+    
+}
+}
+--------------------------------------------------
+
