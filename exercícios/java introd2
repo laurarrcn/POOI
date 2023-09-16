@@ -137,3 +137,21 @@ must add 1 for it to count 0-6.
 double will show a random value between 0 and 1.
 boolean will show a value true or false.
 ----------------------------------------------------------------------------------
+//if = it will perform a block of code if the condition set is true 
+import java.util.*;
+
+public class Main{
+    
+    public static void main(String[] args){
+        int age = 12;
+        
+        if(age>=18){
+            System.out.println("You are an adult congrats");
+        }
+        
+        else{
+            System.out.println("youre not an adult");
+        }
+    }
+}
+--------------------------------------------------------------------
