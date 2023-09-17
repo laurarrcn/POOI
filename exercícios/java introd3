@@ -1,0 +1,25 @@
+Digitar uma temperatura e usando if, else if e else aparecerá o que a temperatura corresponde.
+  && = AND
+  || = OR
+  ! = NOT
+  import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite uma temperatura");
+        int temp = scanner.nextInt() ;
+        
+        if(temp>30){
+            System.out.println("Its hot outside");
+        }
+        else if(temp>=20 && temp<=30){
+            System.out.println("its warm outside");
+        }
+            else{
+                System.out.println("Its cold outside");
+            }
+        
+    }
+}
+--------------------------------------------------------
