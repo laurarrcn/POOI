@@ -106,3 +106,56 @@ public class Main{
 }
 }
 -----------------------------------------------------
+STRING METHODS
+
+import java.util.*;
+public class Main
+{
+  public static void main (String[]args)
+  {
+    String name = "Laura";
+    //boolean result = name.equals("Laura"); to check if its T or F
+    //int result = name.length(); to check how many letters the string has
+    // char result = name.charAt(3); to check what letter is at X position
+    // int result = name.indexOf("r"); to find the position of the chosen letter
+    //String result = name.toUpperCase(); to make the string uppercase
+    // String result = name.toLowerCase(); to make the string lowercase
+    // String result = name.replace('L','K'); to replace a letter
+     
+      System.out.println (result);
+
+  }
+}
+-----------------------------------------------------
+introd of classes
+Main.java
+import java.util.*;
+public class Main
+{
+  public static void main (String[]args)
+  {
+  Car myCar = new Car();
+  
+  System.out.println(myCar.model);
+
+  }
+}
+
+Car.java
+public class Car {
+    
+    String make = "Chevrolet";
+    String model = "Corvette";
+    int year = 2020;
+    String color = "blue";
+    double price = 50000.00;
+    
+    void drive(){
+        System.out.println("You drive the car");
+    }
+    void brake(){
+        System.out.println("You step on the brakes");
+    }
+    
+}
+--------------------------------------------
