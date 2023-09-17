@@ -44,3 +44,36 @@ public class Main{
     }
 }
 -----------------------------------------------------
+WHILE LOOP
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        
+        Scanner scanner = new Scanner(System.in);
+        String name = "";
+        
+         while(name.isBlank()){
+             System.out.println("Enter your name: ");
+             name = scanner.nextLine();
+             
+         }
+        System.out.println("Hello "+name);
+    }
+}
+-----------------------------------------------------
+FOR LOOP
+it will execute a block of code  limited amount of times
+in this example it will make 10 to 0 by decreasing two numbers
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+         
+         for(int i=10; i>=0;){
+         System.out.println(i);
+         i-=2;
+    }
+    System.out.println("Happy new year");
+    }
+}
+--------------------------------------------------------
