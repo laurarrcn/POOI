@@ -1,47 +1,36 @@
 
 package com.mycompany.main;
-import java.util.*;
 
-public class Admnistradora extends Juridica implements InstituicaoFinanceira{
-    private double taxaCorretagem;
-    private boolean plataformaOnline;
-    List<Investimento>investimentos;
-    public static int contIv;
 
-    public Admnistradora(double taxaCorretagem, boolean plataformaOnline, String nomeFantasia, String cnpj, String nome) {
-        super(nomeFantasia, cnpj, nome);
-        this.taxaCorretagem = taxaCorretagem;
-        this.plataformaOnline = plataformaOnline;
-        investimentos = new ArrayList<>();
-    }
-
-    public double getTaxaCorretagem() {
-        return taxaCorretagem;
-    }
-
-    public boolean isPlataformaOnline() {
-        return plataformaOnline;
-    }
-
-    public void setTaxaCorretagem(double taxaCorretagem) {
-        this.taxaCorretagem = taxaCorretagem;
-    }
-
-    public void setPlataformaOnline(boolean plataformaOnline) {
-        this.plataformaOnline = plataformaOnline;
-    }
+public class Venda {
+    private int id;
+    private double valor;
+Comercio comercio;
     
-    public void adicionarInvestimento(Investimento v){
-        investimentos.add(v);
-        contIv++;
+    public Venda(int id, double valor) {
+        this.id = id;
+        this.valor = valor;
     }
-    
-    @Override
-    public void calcularAtivosFinanceiros(){
-        System.out.println("Investimento: " +contIv);
+
+    public int getId() {
+        return id;
     }
-    
-    
-    
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public void setComercio(Comercio comercio){
+        this.comercio = comercio;
+    }
+  
     
 }
