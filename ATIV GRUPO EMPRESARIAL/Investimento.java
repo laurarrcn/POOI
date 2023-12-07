@@ -1,10 +1,11 @@
 
 package com.mycompany.main;
-import java.util.*;
+
 
 public class Investimento {
     private int id;
     private double valor;
+    Administradora administradora;
 
     public Investimento(int id, double valor) {
         this.id = id;
@@ -27,5 +28,10 @@ public class Investimento {
         this.valor = valor;
     }
     
+    public void setAdministradora(Administradora administradora){
+        this.administradora = administradora;
+    }
+
+  
     
 }
