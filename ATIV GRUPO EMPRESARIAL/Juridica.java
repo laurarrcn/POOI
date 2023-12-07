@@ -1,24 +1,32 @@
 
 package com.mycompany.main;
-import java.util.*;
+
 public class Juridica extends Cliente{
     public String nomeFantasia;
     public String cnpj;
 
-    public Juridica(String nomeFantasia, String cnpj, String nome) {
-        super(nome);
+    public Juridica(String nomeFantasia, String cnpj, String usuario) {
+        super(usuario);
         this.nomeFantasia = nomeFantasia;
         this.cnpj = cnpj;
     }
 
-    private boolean validarCNPJ(String cnpj){
-      if(cnpj.length() < 1){
-          return false;
-      }  
-      if(cnpj.length() > 1){
-          return true;
-      } 
-      return true;
+    
+    
+    @Override
+    public void imprimir(){
+        System.out.println("Nome Fantasia: "+nomeFantasia);
+        
+    }
+    
+    private boolean validarCNPJ(){
+        if(cnpj.length() < 1){
+            return false;
+        }
+        if(cnpj.length() > 1 ){
+            return true;
+        }
+        return true;
     }
     
 }
