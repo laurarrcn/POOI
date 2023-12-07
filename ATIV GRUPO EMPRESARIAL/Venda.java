@@ -5,7 +5,8 @@ package com.mycompany.main;
 public class Venda {
     private int id;
     private double valor;
-
+Comercio comercio;
+    
     public Venda(int id, double valor) {
         this.id = id;
         this.valor = valor;
@@ -26,6 +27,10 @@ public class Venda {
     public void setValor(double valor) {
         this.valor = valor;
     }
-    
+
+    public void setComercio(Comercio comercio){
+        this.comercio = comercio;
+    }
+  
     
 }
