@@ -1,11 +1,13 @@
 
 package com.mycompany.main;
-import java.util.*;
-public class Fisica extends Cliente{
+
+
+public class Fisica extends Cliente {
     private String nome;
     private String cpf;
 
-    public Fisica(String cpf, String nome) {
+    public Fisica(String nome, String cpf, String usuario) {
+        super(usuario);
         this.nome = nome;
         this.cpf = cpf;
     }
@@ -26,8 +28,13 @@ public class Fisica extends Cliente{
         this.cpf = cpf;
     }
     
+    @Override
+    public void imprimir(){
+        System.out.println("Nome: "+nome);
+         System.out.println("Cpf: "+cpf);
+    }
     
-    private boolean validarCPF(String cpf){
+    private boolean validarCPF(){
         if(cpf.length() < 1){
             return false;
         }
@@ -36,5 +43,4 @@ public class Fisica extends Cliente{
         }
         return true;
     }
-    
 }
