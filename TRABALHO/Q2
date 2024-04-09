@@ -1,0 +1,73 @@
+
+package com.mycompany.main;
+import java.util.*;
+
+public class Oraculo {
+    
+    public String nome;
+    Guerreiro warrior;
+    List<Guerreiro> warriors;
+
+
+    public Oraculo(String nome, Guerreiro warrior, List<Guerreiro> warriors) {
+        this.nome = nome;
+        this.warrior = warrior;
+        this.warriors = warriors;
+    }
+    
+    String prologoIntroducao(){
+        return "oi";
+    }
+    
+    String prologoPerdedor(){
+        return "oi";
+    }
+    
+    String prologoVencedor(){
+        return "oi";
+    }
+    
+    boolean loadLevel01(){
+        return true;
+    }
+    
+    boolean loadLevel02(){
+        return true;
+    }
+    
+   boolean decidirVidaExtra(String frase){
+       return true;
+   }
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+package com.mycompany.main;
+import java.util.*;
+
+public class Guerreiro {
+   
+    public String nome;
+    public int qtdVidas;
+    Oraculo o;
+
+    public Guerreiro(String nome, int qtdVidas, Oraculo o) {
+        this.nome = nome;
+        this.qtdVidas = qtdVidas;
+        this.o = o;
+    }
+    
+    String vidaExtra(){
+        return "oi";
+    }
+    
+}
+
