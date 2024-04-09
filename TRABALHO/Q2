@@ -11,12 +11,20 @@ public class Oraculo {
 
     public Oraculo(String nome, Guerreiro warrior, List<Guerreiro> warriors) {
         this.nome = nome;
-        this.warrior = warrior;
-        this.warriors = warriors;
+       this.warrior = warrior;
+       warriors = new ArrayList<>();
     }
     
+   public void adicionarGuerreiro(Guerreiro g){
+       warriors.add(g);
+   }
+    
+    void definirNome(String nome){
+       this.nome = nome;
+   }
+    
     String prologoIntroducao(){
-        return "oi";
+        return "Olá, aqui estão os nomes dos guerreiros: "+ warriors;
     }
     
     String prologoPerdedor(){
@@ -38,17 +46,14 @@ public class Oraculo {
    boolean decidirVidaExtra(String frase){
        return true;
    }
+   
+  
     
     
     
     
 }
-
-
-
-
-
-
+-----------------------------
 
 package com.mycompany.main;
 import java.util.*;
@@ -71,3 +76,7 @@ public class Guerreiro {
     
 }
 
+
+int sortearVidas(){
+return 8;
+}
